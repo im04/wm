@@ -1,0 +1,55 @@
+default-bg-color = #f4f4f4;
+default-padding-lr = 40px;
+default-padding-tb = 10px;
+default-br-color = #e0e1e1;
+default-br = 1px default-br-color solid;
+line-height-h(h) {
+    height h px;
+    line-height h px;
+}
+overflow-y-auto() {
+    overflow-y auto;
+    overflow-x hidden;
+}
+df-pad-tb() {
+    padding-top default-padding-tb;
+    padding-bottom default-padding-tb;
+}
+df-pad-lr() {
+    padding-left default-padding-lr;
+    padding-right default-padding-lr;
+}
+df-pad(type) {
+    if type=='tb' {
+        df-pad-tb()
+    } else if type=='lr' {
+        df-pad-lr()
+    }
+    padding-top default-padding-tb if type=='t';
+    padding-bottom default-padding-tb if type=='b';
+    padding-left default-padding-lr if type=='l';
+    padding-right default-padding-lr if type=='r';
+}
+df-border-tb() {
+    border-top default-br;
+    border-bottom default-br;
+};
+df-border-lr() {
+    border-top default-br;
+    border-bottom default-br;
+};
+df-border(type) {
+    if type=='tb' {
+        df-border-tb()
+    } else if type=='lr' {
+        df-border-lr()
+    }
+    border-top default-br if type=='t';
+    border-bottom default-br if type=='b';
+    border-left default-br if type=='l';
+    border-right default-br if type=='r';
+}
+margin-lr-auto() {
+    margin-left auto;
+    margin-right auto;
+}

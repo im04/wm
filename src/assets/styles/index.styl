@@ -1,0 +1,128 @@
+@import "~commond-var";
+@import "~styles-var";
+
+.content {
+    df-pad-tb();
+    df-pad-lr();
+	position relative;
+	margin-top 40px;
+	overflow hidden ;
+}
+.edit-page-content {
+    padding-right 80px;
+    padding-bottom 50px;
+    .small-btn {
+        width: 130px !important;
+        margin-right 5px;
+    }
+}
+.text-bar {
+    font-size 12px;
+    color #999999;
+}
+.search-bar {
+    df-pad('b');
+    df-pad-lr();
+    box-sizing content-box;
+    color black;
+    font-size 16px;
+}
+.url-copy {
+    display block;
+    border none;
+    overflow hidden;
+    height auto;
+    width 100%;
+    background-color transparent;
+    resize: none;
+}
+.repeat-el-input {
+    margin-left 10px;
+    width: 300px;
+    display inline-block;
+}
+.child-middle {
+    >* {
+        vertical-align middle;
+    }
+}
+.child-top {
+    >* {
+        vertical-align top;
+    }
+}
+.el-form-item__label {
+    text-align left;
+}
+.has-input-width {
+    .el-select,.el-input {
+        width 320px;
+    }
+    .el-table {
+        .el-select,.el-input {
+            width auto;
+        }
+    }
+}
+.has-input-width-m {
+    .el-select,.el-input {
+        width 198px;
+    }
+}
+.el-loading-mask {
+    background-color: rgba(0,0,0,0);
+}
+//.has-input-max {
+//    .el-select {
+//        width 100%;
+//    }
+//    .el-select,.el-input {
+//        max-width 267px;
+//    }
+//    .el-textarea {
+//        >textarea {
+//            min-height 130px;
+//        }
+//    }
+//    .default-btn {
+//        width: 320px;
+//    }
+//}
+//.has-input-max-h {
+//    .el-select {
+//        width 100%;
+//    }
+//    .el-select,.el-input {
+//        max-width 520px;
+//    }
+//    .el-textarea {
+//        >textarea {
+//            min-height 130px;
+//        }
+//    }
+//    .default-btn {
+//        width: 320px;
+//    }
+//}
+.el-table {
+    text-align center
+    thead div {
+        text-align center
+    }
+    th, .el-table__header-wrapper thead div, .el-table__fixed-header-wrapper thead div {
+        background-color: #f0f0f0;
+    }
+}
+
+//重写 el style 
+.el-table__fixed {
+    box-shadow none;
+}
+.el-submenu__title {
+	font-size 16px;
+	color #fff;
+}
+.el-form-item__label {
+	font-size 16px;
+}
+
