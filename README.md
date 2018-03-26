@@ -1,10 +1,5 @@
 # 说明文档
 
-> vr-mu 后台管理
-## svn地址
-前端文件地址：http://192.168.30.5/svn/csmedia/trunk/html/vr-mu-manage
-原型地址：    http://192.168.30.5/svn/vrmu/产品/原型/交互文件/V1.0
-
 ## 使用指令
 
 ``` bash
